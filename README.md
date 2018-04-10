@@ -1,10 +1,10 @@
 # Teste Backend
 
 Leia primeiro todo o projeto, faça sua estimativa de horas para o desenvolvimento e envie um email com o
-título `[Teste Dev] Estimativa` para rh@nanoincub.com.br
+título `[Teste Backend] Estimativa` para rh@nanoincub.com.br
 
 Quando finalizar o teste, publique tudo no seu [Github](https://github.com) e envie um email com o
-título `[Teste Dev] Finalizado` para rh@nanoincub.com.br contendo o link do repositório do projeto
+título `[Teste Backend] Finalizado` para rh@nanoincub.com.br contendo o link do repositório do projeto
 
 ##Atenção:
 
@@ -96,4 +96,4 @@ Utilize algum framework para auxiliar no desenvolvimento da interface, por exemp
 
 ## Dúvida
 
-Se tiver qualquer dúvida sobre esse teste, envie um email com o título `[Teste Dev] O assunto da dúvida` para rh@nanoincub.com.br
+Se tiver qualquer dúvida sobre esse teste, envie um email com o título `[Teste Backend] O assunto da dúvida` para rh@nanoincub.com.br
