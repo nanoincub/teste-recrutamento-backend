@@ -1,1 +1,96 @@
-# teste-backend
+# Teste Backend
+
+Leia primeiro todo o projeto, faça sua estimativa de horas para o desenvolvimento e envie um email com o
+título `[Teste Dev] Estimativa` para rh@nanoincub.com.br
+
+Quando finalizar o teste, publique tudo no seu [Github](https://github.com) e envie um email com o
+título `[Teste Dev] Finalizado` para rh@nanoincub.com.br contendo o link do repositório do projeto
+
+##Atenção:
+
+Coloque no `README.md` do seu projeto todas as informações para conseguirmos executá-lo
+
+
+## Missão
+- Desenvolver um **Painel Administrativo** em **PHP** para gestão de Produto
+- Faça validações nos campos
+
+
+### Especificação
+
+Monte uma base de produto com a seguinte estrutura:
+
+```
+nome:               string
+preco:              string
+quantidade_estoque: int
+categoria_id:       bool
+data_criacao:       datetime
+data_alteracao:     datetime
+```
+
+```
+nome:               string
+data_criacao:       datetime
+data_alteracao:     datetime
+```
+
+Utilize **MySQL** para armazenar os dados.
+
+### Funcionalidades da Aplicação
+
+`Login`
+
+Página de Login com campo usuário e senha.
+
+`Listagem de Produto`
+
+Listagem dos produtos exibindo o id, Nome,Categoria, Preco e Quantidade de Estoque. A listagem deverá ter paginação.
+
+`Cadastro de Produto`
+
+Formulário de cadastro com os campos do produto
+
+`Edição de Produto`
+
+Formulário de edição com os campos do produto
+
+`Excluir Produto`
+
+Um botão de deletar na listagem de produtos onde o usuário poderá excluir o produto já cadastrado.
+
+`Filtro de Pesquisa na Listagem de Produto`
+
+A listagem de Produto deverá conter um filtro por **Nome do Produto** e pela **Categoria**.
+
+
+`Listagem de Categoria de Produto`
+
+Listagem com todos os produtos, a página deverá ter paginação. A página deverá conter 
+
+`Cadastro de Categoria de Produto`
+
+Formulário de cadastro com os campos do produto
+
+`Edição de Categoria de Produto`
+
+Formulário de edição com os campos do produto
+
+`Excluir  Categoria de Produto`
+
+Um botão de deletar na listagem de produtos onde o usuário poderá excluir o produto já cadastrado.
+
+
+## Dica
+Utilize algum framework para auxiliar no desenvolvimento da interface, por exemplo:
+
+[https://getbootstrap.com/docs/3.3/css/](https://getbootstrap.com/docs/3.3/css/)
+[https://adminlte.io/themes/AdminLTE/index2.html](https://adminlte.io/themes/AdminLTE/index2.html)
+[https://startbootstrap.com/template-overviews/sb-admin-2/](https://startbootstrap.com/template-overviews/sb-admin-2/)
+
+##Framework PHP desejado
+[CodeIgniter 3.x](https://github.com/bcit-ci/CodeIgniter) (*Opcional*)
+
+## Dúvida
+
+Se tiver qualquer dúvida sobre esse teste, envie um email com o título `[Teste Dev] O assunto da dúvida` para rh@nanoincub.com.br
