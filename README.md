@@ -24,7 +24,7 @@ Monte uma base de produto com a seguinte estrutura:
 nome:               string
 preco:              string
 quantidade_estoque: int
-categoria_id:       bool
+categoria_id:       int
 data_criacao:       datetime
 data_alteracao:     datetime
 ```
