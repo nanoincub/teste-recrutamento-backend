@@ -85,7 +85,9 @@ Um botão de deletar na listagem de produtos onde o usuário poderá excluir o p
 Utilize algum framework para auxiliar no desenvolvimento da interface, por exemplo:
 
 [https://getbootstrap.com/docs/3.3/css/](https://getbootstrap.com/docs/3.3/css/)
+
 [https://adminlte.io/themes/AdminLTE/index2.html](https://adminlte.io/themes/AdminLTE/index2.html)
+
 [https://startbootstrap.com/template-overviews/sb-admin-2/](https://startbootstrap.com/template-overviews/sb-admin-2/)
 
 ##Framework PHP desejado
