@@ -39,36 +39,65 @@ Utilize **MySQL** para armazenar os dados.
 
 ### Funcionalidades da Aplicação
 
-`Login`
+- `Login`
+
 Página de Login com campo usuário e senha.
 
-`Listagem de Produto`
+---
+
+- `Listagem de Produto`
+
 Listagem dos produtos exibindo o id, Nome,Categoria, Preco e Quantidade de Estoque. A listagem deverá ter paginação.
 
-`Cadastro de Produto`
+---
+
+- `Cadastro de Produto`
+
 Formulário de cadastro com os campos do produto
 
-`Edição de Produto`
+---
+
+- `Edição de Produto`
+
 Formulário de edição com os campos do produto
 
-`Excluir Produto`
+---
+
+- `Excluir Produto`
+
 Um botão de deletar na listagem de produtos onde o usuário poderá excluir o produto já cadastrado.
 
-`Filtro de Pesquisa na Listagem de Produto`
+---
+
+- `Filtro de Pesquisa na Listagem de Produto`
+
 A listagem de Produto deverá conter um filtro por **Nome do Produto** e pela **Categoria**.
 
-`Listagem de Categoria de Produto`
+---
+
+- `Listagem de Categoria de Produto`
+
 Listagem com todos os produtos, a página deverá ter paginação. A página deverá conter 
 
-`Cadastro de Categoria de Produto`
+---
+
+- `Cadastro de Categoria de Produto`
+
 Formulário de cadastro com os campos do produto
 
-`Edição de Categoria de Produto`
+---
+
+- `Edição de Categoria de Produto`
+
 Formulário de edição com os campos do produto
 
-`Excluir  Categoria de Produto`
+---
+
+- `Excluir  Categoria de Produto`
+
 Um botão de deletar na listagem de produtos onde o usuário poderá excluir o produto já cadastrado.
 
+---
 
 ## Dica
 Utilize algum framework para auxiliar no desenvolvimento da interface, por exemplo:
