@@ -8,18 +8,19 @@ título `[Teste Backend] Finalizado` para rh@nanoincub.com.br contendo o link do
 
 ## Atenção:
 
-Coloque no `README.md` do seu projeto todas as informações para conseguirmos executá-lo
+Coloque no `README.md` do seu projeto todas as instruções para conseguirmos executá-lo.
 
 
 ## Missão
 - Desenvolver um **Painel Administrativo** em **PHP** para gestão de Produto
-- Faça validações nos campos
+- Faça validações nos campos, todos os campos são obrigatórios
 
 
 ### Especificação
 
 Monte uma base de produto com a seguinte estrutura:
 
+Produto:
 ```
 nome:               string
 preco:              string
@@ -29,6 +30,7 @@ data_criacao:       datetime
 data_alteracao:     datetime
 ```
 
+Categoria de produto:
 ```
 nome:               string
 data_criacao:       datetime
@@ -45,62 +47,62 @@ Página de Login com campo usuário e senha.
 
 ---
 
-- `Listagem de Produto`
+`Listagem de Produto`
 
 Listagem dos produtos exibindo o ID, Nome,Categoria, Preco e Quantidade de Estoque. A listagem deverá ter paginação.
 
 ---
 
-- `Cadastro de Produto`
+`Cadastro de Produto`
 
 Formulário de cadastro com os campos do produto
 
 ---
 
-- `Edição de Produto`
+`Edição de Produto`
 
 Formulário de edição com os campos do produto
 
 ---
 
-- `Excluir Produto`
+`Excluir Produto`
 
 Um botão de deletar na listagem de produtos onde o usuário poderá excluir o produto cadastrado.
 
 ---
 
-- `Filtro de Pesquisa na Listagem de Produto`
+`Filtro de Pesquisa na Listagem de Produto`
 
 A Listagem de Produto deverá conter um filtro por **Nome do Produto** e pela **Categoria**.
 
 ---
 
-- `Listagem de Categoria de Produto`
+`Listagem de Categoria de Produto`
 
 Listagem das categorias do produtos apenas com paginação.
 
 ---
 
-- `Cadastro de Categoria de Produto`
+`Cadastro de Categoria de Produto`
 
 Formulário de cadastro com os campos da categoria do produto
 
 ---
 
-- `Edição de Categoria de Produto`
+`Edição de Categoria de Produto`
 
 Formulário de edição com os campos da categoria do produto
 
 ---
 
-- `Excluir  Categoria de Produto`
+`Excluir  Categoria de Produto`
 
 Um botão de deletar na listagem de categorias de produtos onde o usuário poderá excluir a categoria cadastrada.
 
 ---
 
 ## Dica
-Utilize algum framework para auxiliar no desenvolvimento da interface, por exemplo:
+VocÊ pode utilizar algum framework para auxiliar no desenvolvimento da interface, por exemplo:
 
 [https://getbootstrap.com/docs/3.3/css/](https://getbootstrap.com/docs/3.3/css/)
 
