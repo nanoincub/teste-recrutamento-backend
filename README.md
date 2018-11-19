@@ -101,8 +101,8 @@ Um botão de deletar na listagem de categorias de produtos onde o usuário poder
 
 ---
 
-## Dica
-VocÊ pode utilizar algum framework para auxiliar no desenvolvimento da interface, por exemplo:
+## Sugestões
+Você pode utilizar algum framework para auxiliar no desenvolvimento da interface, por exemplo:
 
 [https://getbootstrap.com/docs/3.3/css/](https://getbootstrap.com/docs/3.3/css/)
 
