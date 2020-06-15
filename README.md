@@ -1,108 +1,151 @@
 # Teste Backend
 
-Leia primeiro todo o projeto, faça sua estimativa de horas para o desenvolvimento e envie um email com o
-título `[Teste Backend] Estimativa` para rh@nanoincub.com.br
+Leia primeiro todo o projeto, faça sua estimativa de horas para o desenvolvimento e envie um email com o título `[Teste Backend] Estimativa` para rh@nanoincub.com.br
 
-Quando finalizar o teste, publique tudo no seu [Github](https://github.com) e envie um email com o
-título `[Teste Backend] Finalizado` para rh@nanoincub.com.br contendo o link do repositório do projeto
+Quando finalizar o teste, publique tudo no seu [Github](https://github.com) e envie um email com o título `[Teste Backend] Finalizado` para rh@nanoincub.com.br contendo o link do repositório do projeto.
 
 ## Atenção:
 
 Coloque no `README.md` do seu projeto todas as instruções para conseguirmos executá-lo.
 
+---
+
+## Escopo do projeto
+
+O cliente entrou em contato querendo desenvolver um sistema de bonificação para seus funcionários, para não bonificar os funcionários em forma de dinheiro, ele decidiu desenvolver um sistema onde os funcionários terão um saldo de pontos e esses pontos podem ser convertidos em recarga para celular, compra de produtos, etc.
+
+O MVP proposto é um painel administrativo para gerenciar os funcionários e seus respectivos pontos.
 
 ## Missão
-- Desenvolver um **Painel Administrativo** em **PHP** para gestão de Produto
-- Faça validações nos campos, todos os campos são obrigatórios
+Desenvolver um **Painel Administrativo** em **PHP** para gestão de funcionário e bonificação.
 
+## Avaliação
+
+Entre os critérios de avaliação estão:
+- Usabilidade
+- Criatividade
+- Código limpo e organização
+- Modelagem de banco de dados
+- Lógica de negócio
+- Documentação do projeto (readme)
 
 ### Especificação
 
-Monte uma base de produto com a seguinte estrutura:
+Monte uma base de dados com a seguinte estrutura:
 
-Produto:
+Administrador:
 ```
-nome:               string
-preco:              string
-quantidade_estoque: int
-categoria_id:       int
+id                  int
+nome_completo:      string
+login:              string
+senha:              string
 data_criacao:       datetime
 data_alteracao:     datetime
 ```
 
-Categoria de produto:
+Funcionario:
 ```
-nome:               string
+id                  int
+nome_completo:      string
+login:              string
+senha:              string
+saldo_atual:        decimal
+data_criacao:       datetime
+data_alteracao:     datetime
+```
+
+Movimentacao:
+```
+id                  uuid
+tipo_movimentacao   string      entrada|saida
+valor:              decimal
+observacao:         string  
+administrador_id:   int  
 data_criacao:       datetime
 data_alteracao:     datetime
 ```
 
 Utilize **MySQL** para armazenar os dados.
 
+---
+
 ### Funcionalidades da Aplicação
+
+#### Autenticação
 
 - `Login`
 
-Página de Login com campo usuário e senha.
+Página de Login com campo usuário e senha. Não precisa ter opção de redefinir senha para este MVP.
 
 ---
 
-`Listagem de Produto`
+#### Funcionário
 
-Listagem dos produtos exibindo o ID, Nome,Categoria, Preco e Quantidade de Estoque. A listagem deverá ter paginação.
+`Listagem de funcionário`
 
----
-
-`Cadastro de Produto`
-
-Formulário de cadastro com os campos do produto
+Listagem dos funcionários exibindo o ID, Nome,Saldo atual. A listagem deverá ter paginação.
 
 ---
 
-`Edição de Produto`
+`Visualizar extrato do funcionário`
 
-Formulário de edição com os campos do produto
-
----
-
-`Excluir Produto`
-
-Um botão de deletar na listagem de produtos onde o usuário poderá excluir o produto cadastrado.
+Na listagem de funcionários, deverá ter um botão para visualizar o extrato do funcionário com todas as transações de seus pontos (Data da transação, Tipo, Valor, Observação).
 
 ---
 
-`Filtro de Pesquisa na Listagem de Produto`
+`Cadastro de funcionário`
 
-A Listagem de Produto deverá conter um filtro por **Nome do Produto** e pela **Categoria**.
-
----
-
-`Listagem de Categoria de Produto`
-
-Listagem das categorias do produtos apenas com paginação.
+Formulário de cadastro com os campos do funcionário
 
 ---
 
-`Cadastro de Categoria de Produto`
+`Edição de funcionário`
 
-Formulário de cadastro com os campos da categoria do produto
-
----
-
-`Edição de Categoria de Produto`
-
-Formulário de edição com os campos da categoria do produto
+Formulário de edição com os campos do funcionário
 
 ---
 
-`Excluir  Categoria de Produto`
+`Excluir funcionário`
 
-Um botão de deletar na listagem de categorias de produtos onde o usuário poderá excluir a categoria cadastrada.
+Um botão de deletar na listagem de funcionario onde o administrador poderá excluir o funcionário cadastrado.
+
+---
+
+`Filtro de Pesquisa na Listagem de Funcionário`
+
+A Listagem de Funcionário deverá conter um filtro por **Nome do funcionário** e pela **Categoria**.
+
+---
+
+#### Transação
+
+
+`Listagem de transações`
+
+Listagem das transações, listando do ultimo para o primeiro. A listagem precisará ter paginação.
+
+---
+
+`Cadastro de transação`
+
+Formulário de cadastro com os campos da transação. O campo observação será um pequeno texto para o administrador informar o motivo, exemplo:
+
+```
+tipo:       saida
+valor:      24.99pts 
+observacao: Recarga de celular
+```
+ou
+```
+tipo:       entrada
+valor:      100.00pts
+observacao: Entrega de projeto antes do prazo
+```
 
 ---
 
 ## Sugestões
-Você pode utilizar algum framework para auxiliar no desenvolvimento da interface, por exemplo:
+Você pode utilizar qualquer framework para auxiliar no desenvolvimento da interface, por exemplo:
 
 [https://getbootstrap.com/docs/3.3/css/](https://getbootstrap.com/docs/3.3/css/)
 
@@ -110,9 +153,6 @@ Você pode utilizar algum framework para auxiliar no desenvolvimento da interfac
 
 [https://startbootstrap.com/template-overviews/sb-admin-2/](https://startbootstrap.com/template-overviews/sb-admin-2/)
 
-
-### Framework PHP desejado
-[CodeIgniter 3.x](https://github.com/bcit-ci/CodeIgniter) (*Opcional*)
 
 ## Dúvida
 
