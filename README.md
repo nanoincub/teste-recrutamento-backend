@@ -39,7 +39,7 @@ Monte uma base de dados em **MySQL** com a seguinte estrutura:
 
 Tabela - `administrador`
 
-```sql
+```
 id                  int
 nome_completo:      string
 login:              string
@@ -51,7 +51,7 @@ data_alteracao:     datetime    * atualiza automaticamente
 
 Tabela - `funcionario`
 
-```sql
+```
 id                  int
 nome_completo:      string
 login:              string
@@ -65,7 +65,7 @@ data_alteracao:     datetime    * atualiza automaticamente
 
 Tabela - `movimentacao`
 
-```sql
+```
 
 id                  *uuid*
 tipo_movimentacao   enum        * [entrada|saida]
