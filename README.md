@@ -67,7 +67,7 @@ Tabela - `movimentacao`
 
 ```
 
-id                  *uuid*
+id                  int
 tipo_movimentacao   enum        * [entrada|saida]
 valor:              decimal
 observacao:         string
