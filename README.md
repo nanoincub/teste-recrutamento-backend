@@ -12,9 +12,11 @@ Coloque no `README.md` do seu projeto todas as instruções para conseguirmos ex
 
 ## Escopo do projeto
 
-O cliente entrou em contato querendo desenvolver um sistema de bonificação para seus funcionários, para não bonificar os funcionários em forma de dinheiro, ele decidiu desenvolver um sistema onde os funcionários terão um saldo de pontos e esses pontos podem ser convertidos em recarga para celular, compra de produtos, etc.
+O cliente entrou em contato querendo desenvolver um sistema de bonificação para seus funcionários, para não bonificar os funcionários em forma de dinheiro, ele decidiu criar uma moeda digital, ele teve a idéia de criar um sistema onde os funcionários terão um saldo de moedas digital e essas moeda podem ser convertidos em recarga para celular, compra de produtos, etc.
 
-O MVP proposto é um painel administrativo para gerenciar os funcionários e seus respectivos pontos.
+O MVP proposto é um painel administrativo para gerenciar os funcionários e seus respectivos saldos.
+
+Futuramente a ideia é ter um portal do funcionário, onde ele realizará o login, fará a consulta o saldo e solicitará a troca de moedas por produtos e serviços. Mas esse parte do projeto não entrará no escopo atual.
 
 ## Missão
 
@@ -54,8 +56,8 @@ Tabela - `funcionario`
 ```
 id                  int
 nome_completo:      string
-login:              string
-senha:              string
+login:              string      * o login e senha do funcionário não será utilizado neste exato momento
+senha:              string      * o login e senha do funcionário não será utilizado neste exato momento
 saldo_atual:        decimal
 administrador_id:   int         * administrador que cadastrou este registro
 data_criacao:       datetime
@@ -82,8 +84,8 @@ data_criacao:       datetime
 
 #### 1 - Autenticação
 
-**1.1. Login**
-> Página de Login com campo usuário e senha. Não precisa ter opção de redefinir senha para este MVP.
+**1.1. Login Admin**
+> Página de Login apenas para os administradores com campo usuário e senha. Não precisa ter opção de redefinir senha para este MVP.
 
 #### 2 - Funcionários
 
