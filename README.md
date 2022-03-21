@@ -12,9 +12,9 @@ Coloque no `README.md` do seu projeto todas as instruções para conseguirmos ex
 
 ## Escopo do projeto
 
-O cliente entrou em contato querendo desenvolver um sistema de bonificação para seus funcionários, para não bonificar os funcionários em forma de dinheiro, ele decidiu criar uma moeda digital, ele teve a idéia de criar um sistema onde os funcionários terão um saldo de moedas digital e essas moeda podem ser convertidos em recarga para celular, compra de produtos, etc.
+O cliente entrou em contato querendo desenvolver um sistema de bonificação para seus funcionários. Para não bonificar os funcionários em forma de dinheiro, ele decidiu criar uma moeda digital. Com base nisso, a ideia é criar um sistema onde os funcionários terão um saldo de moeda digital e essas moedas podem ser convertidas em recarga para celular, compra de produtos e pagamento de contas.
 
-O MVP proposto é um painel administrativo para gerenciar os funcionários e seus respectivos saldos.
+O MVP proposto é um Painel Administrativo para gerenciar os funcionários e seus respectivos saldos.
 
 Futuramente a ideia é ter um portal do funcionário, onde ele realizará o login, fará a consulta o saldo e solicitará a troca de moedas por produtos e serviços. Mas esse parte do projeto não entrará no escopo atual.
 
